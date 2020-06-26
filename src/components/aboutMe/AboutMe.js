@@ -18,7 +18,7 @@ class AboutMe extends Component {
   render() {
     return (
       <Container>
-        <StyledTable borderless className='mb-0'>
+        <StyledTable borderless>
           <tbody>
             <tr>
               <td><FaUser size='1.5em'/></td>
@@ -31,7 +31,7 @@ class AboutMe extends Component {
             </tr>
             <tr>
               <td><FaHome size='1.5em'/></td>
-              <td>When I'm not coding, I play guitar (poorly) and tennis (pretty well), I bike around SF, and walk leisurely outdoors (i.e. hiking).</td>
+              <td>When I'm not coding, I try to be outdoors as much as possible- playing tennis, exploring the city, biking, hiking, all that good stuff.</td>
             </tr>
             <tr>
               <td><FaRegHeart size='1.5em'/></td>

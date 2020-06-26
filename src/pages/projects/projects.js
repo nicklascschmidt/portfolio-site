@@ -20,20 +20,21 @@ class Projects extends React.Component {
               githubLink={projectArray[i].githubLink}
             />
           </Col>
-          {projectArray[i+1] &&
-          <Col lg='6' className='mb-2'>
-            <CardProject
-              title={projectArray[i+1].title}
-              array={projectArray[i+1].imgSrcArray}
-              projectDescription={projectArray[i+1].projectDescription}
-              projectLink={projectArray[i+1].projectLink}
-              githubLink={projectArray[i+1].githubLink}
-            />
-          </Col>}
+          {projectArray[i+1] && (
+            <Col lg='6' className='mb-2'>
+              <CardProject
+                title={projectArray[i+1].title}
+                array={projectArray[i+1].imgSrcArray}
+                projectDescription={projectArray[i+1].projectDescription}
+                projectLink={projectArray[i+1].projectLink}
+                githubLink={projectArray[i+1].githubLink}
+              />
+            </Col>
+          )}
         </Row>
       )
     }
-    return displayProjectArray
+    return displayProjectArray;
   }
 
   render() {
@@ -41,7 +42,7 @@ class Projects extends React.Component {
       <div>
         <JumbotronComponent title='Projects' />
         <Container>
-          {this.showCards()}
+          { this.showCards() }
         </Container>
       </div>
     )
