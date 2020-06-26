@@ -1,10 +1,24 @@
 import React from "react";
+import styled from 'styled-components';
 import JumbotronComponent from '../../components/jumbotron/Jumbotron';
 import { Container, Card, CardBody } from 'reactstrap';
 import { FaFileAlt } from "react-icons/fa";
 import IconLink from '../../components/icon/icon';
-import { resumeDropboxLink, resumeImgurLink } from './resumeSource';
-import './resume.css';
+import { resumePdfLink, resumeJpgLink } from './resumeSource';
+
+const StyledCardBody = styled(CardBody)`
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+  & > a {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+`;
 
 class Resume extends React.Component {
   render() {
@@ -13,18 +27,15 @@ class Resume extends React.Component {
         <JumbotronComponent title='Resume' />
         <Container>
           <Card className='mb-3'>
-            <CardBody className='resume-card'>
-              {/* inline style only */}
-              <span style={{position:'absolute', right:'1rem', top:'1rem'}}> 
-                <IconLink
-                  hrefLink={resumeDropboxLink}
-                  title='Resume on Dropbox'
-                >
-                  <FaFileAlt size='3em'/>
-                </IconLink>
-              </span>
-              <img src={resumeImgurLink} alt='Resume' className='resume-img' />
-            </CardBody>
+            <StyledCardBody>
+              <IconLink
+                hrefLink={resumePdfLink}
+                title='Resume on Dropbox'
+              >
+                <FaFileAlt size='3em'/>
+              </IconLink>
+              <img src={resumeJpgLink} alt='Resume' />
+            </StyledCardBody>
           </Card>
         </Container>
       </div>

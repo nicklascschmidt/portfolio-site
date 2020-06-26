@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
-import { resumeDropboxLink } from '../../pages/resume/resumeSource';
+import { resumePdfLink } from '../../pages/resume/resumeSource';
 
 export default [
   {
@@ -14,7 +14,7 @@ export default [
     icon: (props) => <FaLinkedin {...props} />,
   },
   {
-    hrefLink: resumeDropboxLink,
+    hrefLink: resumePdfLink,
     title: 'Resume on Dropbox',
     icon: (props) => <FaFileAlt {...props} />,
   },
