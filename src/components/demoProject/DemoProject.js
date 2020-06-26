@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Row, Col, Card, CardHeader, CardBody, CardText, CardLink } from 'reactstrap';
+import { Row, Col, Card, CardBody, CardText, CardLink } from 'reactstrap';
 import projectArray from '../../pages/projects/projectArray';
+import CustomCardHeader from '../cards/CustomCardHeader';
 
 const Image = styled.img`
   width: 100%;
@@ -12,6 +13,10 @@ const Image = styled.img`
 
 const CardTextSmall = styled(CardText)`
   font-size: .9rem;
+`;
+
+const Link = styled.a`
+  color: var(--body-text-color);
 `;
 
 class DemoProject extends Component {
@@ -34,11 +39,11 @@ class DemoProject extends Component {
 
     return (
       <Card className='mb-2'>
-        <CardHeader className='card-header-style'>
+        <CustomCardHeader>
           <h5>
-            <a href={projectLink} className='project-link' target='_blank' rel="noopener noreferrer">{title}</a>
+            <Link href={projectLink} target='_blank' rel="noopener noreferrer">{ title }</Link>
           </h5>
-        </CardHeader>
+        </CustomCardHeader>
         <CardBody>
           <Row>
             <Col lg='4' className='mb-2'>

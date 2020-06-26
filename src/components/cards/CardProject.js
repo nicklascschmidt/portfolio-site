@@ -1,27 +1,52 @@
 import React from "react";
+import styled from 'styled-components';
+import { Card, CardText, CardBody, CardLink, CardFooter } from 'reactstrap';
 import CarouselComponent from '../carousel/CarouselComponent';
-import { Card, CardText, CardBody, CardLink, CardHeader, CardFooter } from 'reactstrap';
+import CustomCardHeader from './CustomCardHeader';
 
-class CardProject extends React.Component {
-  render() {
-    let technologies = this.props.techUsed && <CardText style={{fontSize:'.9rem'}}><strong>Technologies:</strong> {this.props.techUsed}.</CardText>;
-    return (
-      <Card className='mb-3 card-height-fix'>
-        <CardHeader className='card-header-style'>
-          <h5><a href={this.props.projectLink} className='project-link' target='_blank' rel="noopener noreferrer">{this.props.title}</a></h5>
-        </CardHeader>
-        <CarouselComponent array={this.props.array}/>
-        <CardBody>
-          <CardText>{this.props.projectDescription}</CardText>
-          {technologies}
-        </CardBody>
-          <CardFooter style={{textAlign:'right'}}>
-            <CardLink href={this.props.projectLink} target='_blank' rel="noopener noreferrer">Live Site</CardLink>
-            <CardLink href={this.props.githubLink} target='_blank' rel="noopener noreferrer">GitHub</CardLink>
-          </CardFooter>
-      </Card>
-    )
-  }
+const StyledCard = styled(Card)`
+  margin-bottom: 1rem;
+  height: 100%;
+`;
+
+const StyledCardText = styled(CardText)`
+  font-size: .9rem;
+`;
+
+const StyledCardFooter = styled(CardFooter)`
+  text-align: right;
+`;
+
+const Link = styled.a`
+  color: var(--body-text-color);
+`;
+
+const CardProject = (props) => {
+  const {
+    techUsed,
+    projectLink,
+    title,
+    array,
+    projectDescription,
+    githubLink,
+  } = props;
+
+  return (
+    <StyledCard>
+      <CustomCardHeader>
+        <h5><Link href={projectLink} target='_blank' rel="noopener noreferrer">{ title }</Link></h5>
+      </CustomCardHeader>
+      <CarouselComponent array={array}/>
+      <CardBody>
+        <CardText>{ projectDescription }</CardText>
+        { techUsed && <StyledCardText><strong>Technologies:</strong> {techUsed}.</StyledCardText> }
+      </CardBody>
+        <StyledCardFooter>
+          <CardLink href={projectLink} target='_blank' rel="noopener noreferrer">Live Site</CardLink>
+          <CardLink href={githubLink} target='_blank' rel="noopener noreferrer">GitHub</CardLink>
+        </StyledCardFooter>
+    </StyledCard>
+  )
 }
 
 export default CardProject;
