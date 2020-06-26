@@ -10,6 +10,7 @@
   --background-color: #FFFFFF;
   --hr-color: #788ADA;
   --nav-font: #FFFFFF;
+  --lightest-grey-color: #f9f9f9;
 }
 
 html, body, #root, .App {
@@ -19,6 +20,7 @@ html, body, #root, .App {
 
 body {
   font-family: 'Raleway', sans-serif;
+  background-color: var(--lightest-grey-color);
 }
 
 a {
