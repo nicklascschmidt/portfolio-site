@@ -1,16 +1,13 @@
 import React from "react";
 import { LinkContainer } from 'react-router-bootstrap';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Button } from 'reactstrap';
 
-import JumbotronComponent from '../../components/jumbotron/Jumbotron';
+import Jumbotron from '../../components/jumbotron/Jumbotron';
 import CustomCard from '../../components/cards/Card';
-import ProfileImageComponent from '../../components/img/profile-image';
 import DemoProject from '../../components/demoProject/DemoProject';
 import HeaderComponent from '../../components/header/Header';
 import FeaturedProjects from '../../components/featuredProject/FeaturedProjects';
 import SectionFooter from '../../components/sectionFooter/SectionFooter';
-import AboutMe from '../../components/aboutMe/AboutMe';
-import ContactInfo from '../../components/contact/ContactInfo';
 import ContactForm from '../../components/contact/ContactForm';
 
 
@@ -28,24 +25,7 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <JumbotronComponent title='Nicklas Chen Schmidt' subtitle='Full-Stack Developer'>
-          <ProfileImageComponent src='https://i.imgur.com/rSkhIRj.jpg' alt='Profile Picture' />
-        </JumbotronComponent>
-        
-        <Container>
-          <Row>
-            <Col lg='8' className='mb-3'>
-              <CustomCard header='About'>
-                <AboutMe />
-              </CustomCard>
-            </Col>
-            <Col lg='4' className='mb-3'>
-              <CustomCard header='Contact Info' classNameProp='card-height-fix'>
-                <ContactInfo />
-              </CustomCard>
-            </Col>
-          </Row>
-        </Container>
+        <Jumbotron isMain title='Nicklas Chen Schmidt' subtitle='Frontend Engineer' />
 
         <HeaderComponent title='Featured Projects' id='main-projects'/>
         <Container>
