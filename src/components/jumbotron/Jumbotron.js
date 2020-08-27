@@ -12,6 +12,12 @@ const StyledJumbotron = styled.div`
 
       max-width: 1140px;
       margin: 0 auto;
+
+      @media (max-width: 768px) {
+        grid-template-rows: repeat(2, min-content);
+        grid-row-gap: 1rem;
+        grid-template-columns: none;
+      }
     `
     : `
       background-color: var(--jumbotron-color);
