@@ -38,7 +38,7 @@ class ContactForm extends React.Component {
               id="formSubject"
               type="text"
               name="submitterSubject"
-              placeholder="ex. Interview Scheduling"
+              placeholder="Schedule an Interview"
               value={this.state.submitterSubject}
               onChange={e => this.handleChange(e)}
             />
@@ -51,7 +51,7 @@ class ContactForm extends React.Component {
               type="textarea"
               name="submitterMessage"
               id="formMessage"
-              placeholder="ex. You rock and we want to hire you!"
+              placeholder="You rock and we want to hire you!"
               value={this.state.submitterMessage}
               onChange={e => this.handleChange(e)}
             />
