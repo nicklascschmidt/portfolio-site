@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Row, Col, Card, CardBody, CardText, CardLink } from 'reactstrap';
-import projectArray from '../../pages/projects/projectArray';
+import { mainProjects } from '../../pages/projects/projectSources.data';
 import CustomCardHeader from '../cards/CustomCardHeader';
 
 const Image = styled.img`
@@ -20,12 +20,6 @@ const Link = styled.a`
 `;
 
 class DemoProject extends Component {
-  constructor(props) {
-    super(props);
-
-    this.project = projectArray[0];
-  }
-  
   render() {
     const {
       title,
@@ -35,7 +29,7 @@ class DemoProject extends Component {
       projectLink,
       githubLink,
       techUsed,
-    } = this.project;
+    } = mainProjects[0];
 
     return (
       <Card className='mb-2'>

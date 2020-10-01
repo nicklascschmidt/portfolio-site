@@ -1,4 +1,12 @@
-const projectArray = [
+export const mainProjects = [
+  {
+    title:'Article Mapper',
+    imgSrcArray:['https://i.imgur.com/9vsQiQl.png', 'https://i.imgur.com/IewJpM0.png', 'https://i.imgur.com/f2rXIex.png', 'https://i.imgur.com/aEaUZ5E.png', 'https://i.imgur.com/CjFqibf.png'],
+    projectDescription:'Utility web app helpful for travel planning, which allows users to visualize listicle locations together in an interactive map. The app scans listicles for locations, searches for location data, and displays them in an interactive map view.',
+    projectLink:'https://article-mapper.herokuapp.com/',
+    githubLink:'https://github.com/nicklascschmidt/portfolio-site',
+    techUsed:['React', 'Redux', 'Reselect', 'Redux-Thunk', 'Leaflet', 'Styled-Components', 'Node', 'Express', 'CheerioJS', 'Google Places API', 'Heroku'],
+  },
   {
     title:'Movie Master',
     videoSrcDesktop:'https://media.giphy.com/media/cmzloTmkpcSfk4Aeuf/giphy.gif',
@@ -7,7 +15,7 @@ const projectArray = [
     projectDescription:'Movie watchlist tracker web app, where users log in then browse IMDB lists or search the OMDB API to create watchlists and track watched/unwatched movies.',
     projectLink:'https://movie-master-app.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/movie-master',
-    techUsed:['JavaScript', 'jQuery', 'HTML', 'CSS', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'Axios', 'Cheerio', 'Ajax']
+    techUsed:['JavaScript', 'jQuery', 'HTML', 'CSS', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'Axios', 'Cheerio', 'Ajax'],
   },
   {
     title:'Guess the Album',
@@ -15,16 +23,7 @@ const projectArray = [
     projectDescription:'Music trivia game, where users guess the release date of popular albums, which are scraped from Rolling Stone.',
     projectLink:'https://guess-the-album.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/guess-the-album',
-    techUsed:['React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'Axios', 'Cheerio', 'react-router-dom', 'reactstrap', 'styled-components']
-  },
-  {
-    title:'Portfolio Site (this one!)',
-    subTitle:'Full stack React app with a Node backend, launched on AWS.',
-    imgSrcArray:['https://i.imgur.com/QU3aC0S.png','https://i.imgur.com/CpIl68T.png','https://i.imgur.com/7pWlq8d.png','https://i.imgur.com/lFgcUsv.png','https://i.imgur.com/oNo3o8x.png'],
-    projectDescription:'Mobile responsive portfolio site built with React and hosted on Amazon Web Services.',
-    projectLink:'http://www.nicklaschenschmidt.com/',
-    githubLink:'https://github.com/nicklascschmidt/ncs-portfolio',
-    techUsed:['AWS (EBS)','React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'react-router-dom', 'reactstrap']
+    techUsed:['React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'Axios', 'Cheerio', 'react-router-dom', 'reactstrap', 'Styled-Components'],
   },
   {
     title:'ThreadAuction',
@@ -33,7 +32,19 @@ const projectArray = [
     projectDescription:'Ecommerce auction site, where users login and browse auction listings, which expire one week after posting.',
     projectLink:'https://threadauction.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/threadauction',
-    techUsed:['React', 'Redux', 'JavaScript', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'HTML', 'CSS', 'Axios', 'moment.js', 'react-router-dom', 'styled-components', 'sequelize-transforms']
+    techUsed:['React', 'Redux', 'JavaScript', 'Node', 'Express', 'SQL', 'Sequelize', 'MVC', 'HTML', 'CSS', 'Axios', 'moment.js', 'react-router-dom', 'Styled-Components', 'sequelize-transforms'],
+  },
+];
+
+const otherProjects = [
+  {
+    title:'Portfolio Site (this one!)',
+    subTitle:'Full stack React app with a Node backend, launched on AWS.',
+    imgSrcArray:['https://i.imgur.com/QU3aC0S.png','https://i.imgur.com/CpIl68T.png','https://i.imgur.com/7pWlq8d.png','https://i.imgur.com/lFgcUsv.png','https://i.imgur.com/oNo3o8x.png'],
+    projectDescription:'Mobile responsive portfolio site built with React and hosted on Amazon Web Services.',
+    projectLink:'http://www.nicklaschenschmidt.com/',
+    githubLink:'https://github.com/nicklascschmidt/ncs-portfolio',
+    techUsed:['AWS (EBS)','React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'react-router-dom', 'reactstrap'],
   },
   {
     title:'Parks and Rec Clicky Game',
@@ -93,4 +104,4 @@ const projectArray = [
   }
 ];
 
-export default projectArray;
+export default mainProjects.concat(otherProjects);
