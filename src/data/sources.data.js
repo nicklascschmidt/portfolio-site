@@ -1,8 +1,4 @@
 
-const googleDocId = '1seSYvfp2RkWnX-dQxWWO4TOnEd1QRiNY';
-export const resumeJpgLink = `https://drive.google.com/uc?id=${googleDocId}`;
-export const resumePdfLink = 'https://www.dropbox.com/s/xbficl7lkgt4g6a/NCS_Resume_072920.pdf?dl=0';
-
 /** Steps:
  * PDF
  *  - Upload new resume here: https://www.dropbox.com/home/Resume
@@ -17,4 +13,12 @@ export const resumePdfLink = 'https://www.dropbox.com/s/xbficl7lkgt4g6a/NCS_Resu
  *  
  */
 
+
+const googleDocId = '1seSYvfp2RkWnX-dQxWWO4TOnEd1QRiNY';
+export const resumeJpgLink = `https://drive.google.com/uc?id=${googleDocId}`;
+export const resumePdfLink = 'https://www.dropbox.com/s/y63nffxd8koj0lv/NCS_Resume_09302020.pdf?dl=0';
+
 // export const resumeJpgLink = 'https://i.imgur.com/2LUIwxM.jpg'; // alt link on imgur
+
+export const githubLink = 'https://github.com/nicklascschmidt';
+export const linkedinLink = 'https://www.linkedin.com/in/nicklascschmidt/';

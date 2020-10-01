@@ -4,7 +4,7 @@ import JumbotronComponent from '../../components/jumbotron/Jumbotron';
 import { Container, Card, CardBody } from 'reactstrap';
 import { FaFileAlt } from "react-icons/fa";
 import IconLink from '../../components/icon/icon';
-import { resumePdfLink, resumeJpgLink } from './resumeSource';
+import { resumePdfLink, resumeJpgLink } from '../../data/sources.data';
 
 const StyledCardBody = styled(CardBody)`
   position: relative;

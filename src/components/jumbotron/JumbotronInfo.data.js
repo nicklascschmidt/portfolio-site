@@ -1,15 +1,15 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
-import { resumePdfLink } from '../../pages/resume/resumeSource';
+import { githubLink, linkedinLink, resumePdfLink } from '../../data/sources.data';
 
 export default [
   {
-    hrefLink: 'https://github.com/nicklascschmidt',
+    hrefLink: githubLink,
     title: 'Github',
     icon: (props) => <FaGithub {...props} />,
   },
   {
-    hrefLink: 'https://www.linkedin.com/in/nicklascschmidt/',
+    hrefLink: linkedinLink,
     title: 'LinkedIn',
     icon: (props) => <FaLinkedin {...props} />,
   },
