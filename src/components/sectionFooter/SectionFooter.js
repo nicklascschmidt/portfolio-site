@@ -7,7 +7,7 @@ const Container = styled.div`
 
 const SectionFooter = ({ children, id }) => {
   return (
-    <Container className='p-1 mb-3' id={id}>
+    <Container id={id}>
       { children }
     </Container>
   );
