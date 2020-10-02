@@ -12,10 +12,10 @@ const Link = styled.a`
   }
 `;
 
-const IconLink = ({ hrefLink, classNameProp, title, children }) => {
+const IconLink = ({ hrefLink, title, className, children }) => {
   return (
     <Link
-      className={classNameProp}
+      className={className}
       href={hrefLink}
       title={title}
       target='_blank'

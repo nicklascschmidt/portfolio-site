@@ -27,7 +27,13 @@ a {
   color: var(--link-color);
 }
 a:hover {
-  color: var(--body-text-color);
+  color: var(--light-text-color);
+}
+a.noStyle {
+  color: inherit;
+}
+a.noStyle:hover {
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {

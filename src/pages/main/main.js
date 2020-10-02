@@ -15,8 +15,16 @@ const Container = styled.div`
   background-position: top;
   background-repeat: no-repeat;
 
-  section:nth-last-child(2) {
-    margin-bottom: 54px;
+  section {
+    padding: 40px 80px 80px;
+
+    @media (max-width: 768px) {
+      padding: 40px 20px 80px;
+    }
+
+    &:nth-last-child(2) { 
+      margin-bottom: 54px;
+    }
   }
 `;
 
@@ -34,11 +42,11 @@ class Main extends React.Component {
       <Container>
         <BasicInfo />
         
-        <AboutMe />
+        <AboutMe id='about' />
 
-        <Projects />
+        <Projects id='projects' />
 
-        <Contact />
+        <Contact id='contact' />
 
         <FixedFooter />
       </Container>
