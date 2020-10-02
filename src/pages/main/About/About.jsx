@@ -30,7 +30,7 @@ const StyledTable = styled(Table)`
   }
 `;
 
-class AboutMe extends Component {
+class About extends Component {
   render() {
     return (
       <Container id={this.props.id}>
@@ -64,4 +64,4 @@ class AboutMe extends Component {
   }
 }
 
-export default AboutMe;
+export default About;

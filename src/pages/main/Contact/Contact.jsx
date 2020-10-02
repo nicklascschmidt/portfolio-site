@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import SectionHeader from '../components/SectionHeader.jsx';
 import Card from '../../../components/cards/Card';
-import ContactForm from '../../../components/contact/ContactForm';
+import ContactForm from '../components/ContactForm.jsx';
 import IconLink from '../components/IconLink.jsx';
 
 import { githubLink, linkedinLink } from '../../../data/sources.data';

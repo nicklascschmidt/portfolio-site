@@ -27,7 +27,7 @@ a {
   color: var(--link-color);
 }
 a:hover {
-  color: var(--light-text-color);
+  color: var(--body-text-color);
 }
 a.noStyle {
   color: inherit;
