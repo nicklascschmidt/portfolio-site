@@ -16,7 +16,7 @@ const Container = styled.header`
   }
 
   hr, nav {
-    width: 350px;
+    width: 220px;
   }
 
   @media (max-width: 768px) {
