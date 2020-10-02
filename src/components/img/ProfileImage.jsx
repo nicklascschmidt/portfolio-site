@@ -6,10 +6,8 @@ const Container = styled.div`
   box-shadow: 0px 1px 3px 0px var(--nav-color);
   width: 13rem;
   height: 13rem;
-  position: relative;
   overflow: hidden;
   border-radius: 50%;
-  margin: auto;
 `;
 
 const Image = styled.img`
@@ -20,7 +18,7 @@ const Image = styled.img`
 
 const ProfileImage = ({ src, alt }) => {
   return (
-    <Container className='mb-1'>
+    <Container>
       <Image src={src} alt={alt} />
     </Container>
   );

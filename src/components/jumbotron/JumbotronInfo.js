@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import IconLink from '../icon/icon';
 import linkData from './JumbotronInfo.data';
-import ProfileImage from '../img/ProfileImage';
+import ProfileImage from '../img/ProfileImage.jsx';
 
 const Container = styled.div`
   text-align: center;
