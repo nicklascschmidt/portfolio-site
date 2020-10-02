@@ -8,11 +8,6 @@ import Projects from './pages/projects';
 import Resume from './pages/resume';
 import NotFound from './pages/notFound';
 
-// components
-import NavBar from './components/nav/NavBar';
-import Background from './components/background/Background';
-import Footer from './components/footer/Footer';
-
 // style
 import './style/App.css';
 
@@ -21,8 +16,6 @@ class App extends React.Component {
     return (
       <Router>
         <ScrollToTop>
-        <Background>
-          <NavBar />
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/projects" component={Projects} />
@@ -30,8 +23,6 @@ class App extends React.Component {
 
             <Route component={NotFound} />
           </Switch>
-          <Footer />
-        </Background>
         </ScrollToTop>
       </Router>
     )
