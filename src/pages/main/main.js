@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 import BasicInfo from './BasicInfo/BasicInfo.jsx';
-import AboutMe from './AboutMe/AboutMe.jsx';
+import About from './About/About.jsx';
 import Projects from './Projects/Projects.jsx';
 import Contact from './Contact/Contact.jsx';
 import FixedFooter from '../../components/footer/FixedFooter';
@@ -42,7 +42,7 @@ class Main extends React.Component {
       <Container>
         <BasicInfo />
         
-        <AboutMe id='about' />
+        <About id='about' />
 
         <Projects id='projects' />
 
