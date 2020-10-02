@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Row, Col, Card, CardBody, CardText, CardLink } from 'reactstrap';
-import { mainProjects } from '../../pages/projects/projectSources.data';
+import { mainProjects } from '../../data/projectSources.data';
 import CustomCardHeader from '../cards/CustomCardHeader';
 
 const Image = styled.img`

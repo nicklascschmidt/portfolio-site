@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import CardProject from '../cards/CardProject';
-import { mainProjects } from '../../pages/projects/projectSources.data';
+import { mainProjects } from '../../data/projectSources.data';
 
 class FeaturedProjects extends Component {
   render() {
