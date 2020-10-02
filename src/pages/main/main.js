@@ -1,50 +1,47 @@
 import React from "react";
-import { LinkContainer } from 'react-router-bootstrap';
-import { Container, Button } from 'reactstrap';
+import styled from 'styled-components';
 
-import Jumbotron from '../../components/jumbotron/Jumbotron';
-import CustomCard from '../../components/cards/Card';
-import DemoProject from '../../components/demoProject/DemoProject';
-import HeaderComponent from '../../components/header/Header';
-import FeaturedProjects from '../../components/featuredProject/FeaturedProjects';
-import SectionFooter from '../../components/sectionFooter/SectionFooter';
-import ContactForm from '../../components/contact/ContactForm';
+import BasicInfo from './BasicInfo/BasicInfo.jsx';
+import AboutMe from './AboutMe/AboutMe.jsx';
+import Projects from './Projects/Projects.jsx';
+import Contact from './Contact/Contact.jsx';
+import FixedFooter from '../../components/footer/FixedFooter';
 
+const Container = styled.div`
+  height: 100vh;
+  background-image: url('palace_of_fine_arts.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
 
-// TODO: update pix for projects
+  section:nth-last-child(2) {
+    margin-bottom: 54px;
+  }
+`;
 
 class Main extends React.Component {
   constructor(props) {
-      super(props);
+    super(props);
 
-      this.state = {
-        
-      };
+    this.state = {
+      
+    };
   }
 
   render() {
     return (
-      <div>
-        <Jumbotron isMain title='Nicklas Chen Schmidt' subtitle='Frontend Engineer' />
+      <Container>
+        <BasicInfo />
+        
+        <AboutMe />
 
-        <HeaderComponent title='Featured Projects' id='main-projects'/>
-        <Container>
-          <DemoProject />
-          <FeaturedProjects />
-          <SectionFooter>
-            <LinkContainer to='/projects'>
-              <Button>Go to All Projects</Button>
-            </LinkContainer>
-          </SectionFooter>
-        </Container>
+        <Projects />
 
-        <HeaderComponent title='Contact' id='contact'/>
-        <Container>
-          <CustomCard header='Send an Email'>
-            <ContactForm />
-          </CustomCard>
-        </Container>
-      </div>
+        <Contact />
+
+        <FixedFooter />
+      </Container>
     );
   }
 }
