@@ -9,7 +9,7 @@ import FixedFooter from '../../components/footer/FixedFooter';
 
 const Container = styled.div`
   height: 100vh;
-  background-image: url('palace_of_fine_arts.jpeg');
+  background-image: url('palace_of_fine_arts.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: top;

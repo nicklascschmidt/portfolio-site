@@ -8,7 +8,7 @@ import ProjectCards from '../components/ProjectCards.jsx';
 import SectionFooter from '../../../components/sectionFooter/SectionFooter';
 
 const Container = styled.section`
-  background-image: url('palace_of_fine_arts.jpeg');
+  background-image: url('palace_of_fine_arts.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
