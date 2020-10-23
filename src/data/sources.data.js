@@ -11,12 +11,13 @@
  *  - Click on the file, hamburger dropdown to "Open in New Window"
  *  - Take the ID (i.e. in between /d/ and /view), paste in as `googleDocId`
  *  
+ * When Complete, move old files to /old folders
  */
 
 
-const googleDocId = '1seSYvfp2RkWnX-dQxWWO4TOnEd1QRiNY';
+const googleDocId = '1nR8-PFxaiqMSuaHLKSOw9508Nu7lgR6m';
 export const resumeJpgLink = `https://drive.google.com/uc?id=${googleDocId}`;
-export const resumePdfLink = 'https://www.dropbox.com/s/y63nffxd8koj0lv/NCS_Resume_09302020.pdf?dl=0';
+export const resumePdfLink = 'https://www.dropbox.com/s/k1hxryexg6kekw1/NCS_Resume_2020.pdf?dl=0';
 
 // export const resumeJpgLink = 'https://i.imgur.com/2LUIwxM.jpg'; // alt link on imgur
 
