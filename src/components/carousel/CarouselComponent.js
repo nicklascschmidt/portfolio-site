@@ -8,22 +8,13 @@ const imgStyle = {
 };
 
 class CarouselComponent extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      linkArray: props.array
-    };
-  }
-
-  componentWillReceiveProps = (props) => {
-    this.setState({ linkArray: props.array });
-  }
-
   render() {
+    const { linkArray } = this.props;
     return (
       <Carousel showIndicators={false} infiniteLoop={true} showThumbs={false}>
-        {this.state.linkArray.map( (link,i) => <img key={`carouselImage${i}`} src={link} alt={`picture${i+1}`} style={imgStyle}/>)}
+        {linkArray.map((link,i) => (
+          <img key={`carousel-image-${i}`} src={link} alt={`picture${i+1}`} style={imgStyle}/>
+        ))}
       </Carousel>
     )
   }

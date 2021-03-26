@@ -3,13 +3,12 @@ import styled from 'styled-components';
 import { CardHeader } from 'reactstrap';
 
 const StyledCardHeader = styled(CardHeader)`
-  text-align: ${props => props.headerAlign};
   background-color: var(--card-header-color);
 `;
 
-const CustomCardHeader = ({ headerAlign, children }) => {
+const CustomCardHeader = ({ children }) => {
   return (
-    <StyledCardHeader headerAlign={headerAlign}>
+    <StyledCardHeader>
       { children }
     </StyledCardHeader>
   );

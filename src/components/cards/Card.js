@@ -8,10 +8,10 @@ const StyledCardBody = styled(CardBody)`
   text-align: ${props => props.align};
 `;
 
-const CustomCard = ({ classNameProp, headerAlign, header, align, children }) => {
+const CustomCard = ({ classNameProp, header, align, children }) => {
   return (
     <Card className={classNameProp}>
-      <CustomCardHeader headerAlign={headerAlign}>
+      <CustomCardHeader>
         <h5>{ header }</h5>
       </CustomCardHeader>
       <StyledCardBody align={align}>
