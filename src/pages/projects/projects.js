@@ -10,7 +10,7 @@ class Projects extends React.Component {
     let displayProjects = [];
     for (let i=0; i < allProjects.length; i+=2) {
       displayProjects.push(
-        <Row>
+        <Row key={`card-project-row-${i}`}>
           <Col lg='6' className='mb-2'>
             <CardProject
               title={allProjects[i].title}

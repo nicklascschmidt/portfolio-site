@@ -8,9 +8,8 @@ class FeaturedProjects extends Component {
     return (
       <Row className='mb-2'>
         {mainProjects.map( (item, i) => 
-          <Col lg='6' className='mb-2'>
+          <Col lg='6' className='mb-2' key={`project-${i}`}>
             <CardProject
-              key={`project${i}`}
               title={item.title}
               array={item.imgSrcArray}
               projectDescription={item.projectDescription}
