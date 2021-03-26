@@ -34,15 +34,15 @@ const CardProject = (props) => {
   return (
     <StyledCard>
       <CustomCardHeader>
-        <h5><Link href={projectLink} target='_blank' rel="noopener noreferrer">{ title }</Link></h5>
+        <h5><Link href={projectLink || githubLink} target='_blank' rel="noopener noreferrer">{ title }</Link></h5>
       </CustomCardHeader>
-      <CarouselComponent array={array}/>
+      <CarouselComponent linkArray={array}/>
       <CardBody>
         <CardText>{ projectDescription }</CardText>
         { techUsed && <StyledCardText><strong>Technologies:</strong> {techUsed}.</StyledCardText> }
       </CardBody>
         <StyledCardFooter>
-          <CardLink href={projectLink} target='_blank' rel="noopener noreferrer">Live Site</CardLink>
+          {projectLink && <CardLink href={projectLink} target='_blank' rel="noopener noreferrer">Live Site</CardLink>}
           <CardLink href={githubLink} target='_blank' rel="noopener noreferrer">GitHub</CardLink>
         </StyledCardFooter>
     </StyledCard>
@@ -50,4 +50,3 @@ const CardProject = (props) => {
 }
 
 export default CardProject;
-

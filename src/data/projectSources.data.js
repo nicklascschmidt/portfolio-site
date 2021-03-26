@@ -8,6 +8,13 @@ export const mainProjects = [
     techUsed:['React', 'Redux', 'Reselect', 'Redux-Thunk', 'Leaflet', 'Styled-Components', 'Node', 'Express', 'CheerioJS', 'Google Places API', 'Heroku'],
   },
   {
+    title:'Robot Control',
+    imgSrcArray:['https://i.imgur.com/1TAe2OE.png','https://i.imgur.com/VKgacHO.png','https://i.imgur.com/2qzPiah.png'],
+    projectDescription:'Dashboard to control an imaginary robot, initially completed for a frontend engineer job application.',
+    githubLink:'https://github.com/nicklascschmidt/robot-control',
+    techUsed:['Python', 'Flask', 'React', 'JavaScript', 'Styled-Components', 'HTML', 'CSS', 'Axios'],
+  },
+  {
     title:'Movie Master',
     videoSrcDesktop:'https://media.giphy.com/media/cmzloTmkpcSfk4Aeuf/giphy.gif',
     videoSrcMobile:'https://media.giphy.com/media/1oDucHBAhiGZuPCzDn/giphy.gif',
@@ -24,6 +31,13 @@ export const mainProjects = [
     projectLink:'https://guess-the-album.herokuapp.com/',
     githubLink:'https://github.com/nicklascschmidt/guess-the-album',
     techUsed:['React', 'JavaScript', 'Node', 'Express', 'HTML', 'CSS', 'Axios', 'Cheerio', 'react-router-dom', 'reactstrap', 'Styled-Components'],
+  },
+  {
+    title:'Faux Twitter',
+    imgSrcArray:['https://i.imgur.com/UmvOA4E.png','https://i.imgur.com/wVF0h9x.png'],
+    projectDescription:'Fake Twitter site built to mimic Twitter\'s UI, where users search for Twitter users to view tweets.',
+    githubLink:'https://github.com/nicklascschmidt/robot-control-osaro',
+    techUsed:['React (Context, Hooks)', 'Twitter API', 'TypeScript', 'Node', 'Express', 'Styled-Components', 'Humps', 'Lodash', 'HTML', 'CSS', 'Axios', 'Prettier'],
   },
   {
     title:'ThreadAuction',
