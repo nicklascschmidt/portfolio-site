@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from 'reactstrap';
 
@@ -28,9 +28,9 @@ class Projects extends Component {
         <SectionHeader isWhite title='Projects' id='projects-section'/>
         <ProjectCards />
         <SectionFooter>
-          <LinkContainer to='/projects'>
+          <Link to='/projects'>
             <Button>See More Projects</Button>
-          </LinkContainer>
+          </Link>
         </SectionFooter>
       </Container>
     );
