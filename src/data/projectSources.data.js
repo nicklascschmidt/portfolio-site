@@ -36,7 +36,7 @@ export const mainProjects = [
     title:'Faux Twitter',
     imgSrcArray:['https://i.imgur.com/UmvOA4E.png','https://i.imgur.com/wVF0h9x.png'],
     projectDescription:'Fake Twitter site built to mimic Twitter\'s UI, where users search for Twitter users to view tweets.',
-    githubLink:'https://github.com/nicklascschmidt/robot-control-osaro',
+    githubLink:'https://github.com/nicklascschmidt/faux-twitter',
     techUsed:['React (Context, Hooks)', 'Twitter API', 'TypeScript', 'Node', 'Express', 'Styled-Components', 'Humps', 'Lodash', 'HTML', 'CSS', 'Axios', 'Prettier'],
   },
   {
