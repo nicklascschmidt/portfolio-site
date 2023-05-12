@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
-import { Card, CardText, CardBody, CardLink, CardFooter } from 'reactstrap';
-import CarouselComponent from '../carousel/CarouselComponent';
+import {Card, CardText, CardBody, CardLink, CardFooter} from 'reactstrap';
+import CarouselComponent from '../carousel/CarouselComponent.jsx';
 import CustomCardHeader from './CustomCardHeader';
 
 const StyledCard = styled(Card)`
@@ -10,7 +10,7 @@ const StyledCard = styled(Card)`
 `;
 
 const StyledCardText = styled(CardText)`
-  font-size: .9rem;
+  font-size: 0.9rem;
 `;
 
 const StyledCardFooter = styled(CardFooter)`
@@ -21,32 +21,45 @@ const Link = styled.a`
   color: var(--body-text-color);
 `;
 
-const CardProject = (props) => {
-  const {
-    techUsed,
-    projectLink,
-    title,
-    array,
-    projectDescription,
-    githubLink,
-  } = props;
-
+const CardProject = ({projectItem}) => {
+  const {title, imgSrcArray, projectDescription, projectLink, githubLink, documentationLink, techUsed} = projectItem;
   return (
     <StyledCard>
       <CustomCardHeader>
-        <h5><Link href={projectLink || githubLink} target='_blank' rel="noopener noreferrer">{ title }</Link></h5>
+        <h5>
+          <Link href={projectLink || githubLink} target="_blank" rel="noopener noreferrer">
+            {title}
+          </Link>
+        </h5>
       </CustomCardHeader>
-      <CarouselComponent linkArray={array}/>
+      <CarouselComponent linkArray={imgSrcArray} />
       <CardBody>
-        <CardText>{ projectDescription }</CardText>
-        { techUsed && <StyledCardText><strong>Technologies:</strong> {techUsed}.</StyledCardText> }
+        <CardText>{projectDescription}</CardText>
+        {techUsed && (
+          <StyledCardText>
+            <strong>Technologies:</strong> {techUsed.join(', ')}.
+          </StyledCardText>
+        )}
       </CardBody>
-        <StyledCardFooter>
-          {projectLink && <CardLink href={projectLink} target='_blank' rel="noopener noreferrer">Live Site</CardLink>}
-          <CardLink href={githubLink} target='_blank' rel="noopener noreferrer">GitHub</CardLink>
-        </StyledCardFooter>
+      <StyledCardFooter>
+        {documentationLink && (
+          <CardLink href={documentationLink} target="_blank" rel="noopener noreferrer">
+            Documentation
+          </CardLink>
+        )}
+        {projectLink && (
+          <CardLink href={projectLink} target="_blank" rel="noopener noreferrer">
+            Live Site
+          </CardLink>
+        )}
+        {githubLink && (
+          <CardLink href={githubLink} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </CardLink>
+        )}
+      </StyledCardFooter>
     </StyledCard>
-  )
-}
+  );
+};
 
 export default CardProject;

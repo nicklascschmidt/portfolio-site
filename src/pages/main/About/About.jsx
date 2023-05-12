@@ -36,12 +36,12 @@ class About extends Component {
       <Container id={this.props.id}>
         <SectionHeader title='About' id='about-section'/>
         <InnerContainer>
-          <ProfileImage src='https://i.imgur.com/rSkhIRj.jpg' alt='Profile Picture' />
+          <ProfileImage src='https://i.imgur.com/YeKxJZv.jpg' alt='Profile Picture' />
           <StyledTable borderless>
             <tbody>
               <tr>
                 <td><FaUser size='1.5em'/></td>
-                <td>I’m a versatile Frontend Engineer seeking opportunities in the Bay Area.</td>
+                <td>I’m a versatile <code>frontend engineer</code> seeking opportunities in the Bay Area (in-person, remote, or hybrid).</td>
               </tr>
               <tr>
                 <td><FaCode size='1.5em'/></td>
@@ -50,7 +50,7 @@ class About extends Component {
               </tr>
               <tr>
                 <td><FaHome size='1.5em'/></td>
-                <td>When I'm not coding, I try to be outdoors as much as possible. I love to play tennis, explore SF on bike, and drink a beer or two in the sunshine.</td>
+                <td>When I'm not coding, I try to be outdoors as much as possible. I love to play tennis, explore SF on bike, and drink a beer in the sun.</td>
               </tr>
               <tr>
                 <td><FaRegHeart size='1.5em'/></td>

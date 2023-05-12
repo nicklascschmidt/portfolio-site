@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import styled from 'styled-components';
 import CardProject from '../../../components/cards/CardProject';
-import { mainProjects } from '../../../data/projectSources.data';
+import {mainProjects} from '../../../data/projectSources.data';
 
 const Container = styled.div`
   display: grid;
@@ -19,19 +19,11 @@ class ProjectCards extends Component {
   render() {
     return (
       <Container>
-        {mainProjects.map((item, i) =>
-          <CardProject
-            key={`card-project-${i}`}
-            title={item.title}
-            array={item.imgSrcArray}
-            projectDescription={item.projectDescription}
-            projectLink={item.projectLink}
-            githubLink={item.githubLink}
-            techUsed={item.techUsed && item.techUsed.join(', ')}
-          />
-        )}
+        {mainProjects.map((item, i) => (
+          <CardProject key={`card-project-${i}`} projectItem={item} />
+        ))}
       </Container>
-    )
+    );
   }
 }
 

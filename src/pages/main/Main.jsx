@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 
 import BasicInfo from './BasicInfo/BasicInfo.jsx';
@@ -22,7 +22,7 @@ const Container = styled.div`
       padding: 40px 20px 80px;
     }
 
-    &:nth-last-child(2) { 
+    &:nth-last-child(2) {
       margin-bottom: 54px;
     }
   }
@@ -33,13 +33,9 @@ class Main extends React.Component {
     return (
       <Container>
         <BasicInfo />
-        
-        <About id='about' />
-
-        <Projects id='projects' />
-
-        <Contact id='contact' />
-
+        <About id="about" />
+        <Projects id="projects" />
+        <Contact id="contact" />
         <FixedFooter />
       </Container>
     );

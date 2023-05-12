@@ -15,9 +15,9 @@
  */
 
 
-const googleDocId = '1nR8-PFxaiqMSuaHLKSOw9508Nu7lgR6m';
+const googleDocId = '1TkBikaiEm9oSJRPEh4Dmva9lTxoW801r';
 export const resumeJpgLink = `https://drive.google.com/uc?id=${googleDocId}`;
-export const resumePdfLink = 'https://www.dropbox.com/s/k1hxryexg6kekw1/NCS_Resume_2020.pdf?dl=0';
+export const resumePdfLink = 'https://www.dropbox.com/s/90kn1cspg0zk7yd/NicklasChenSchmidt-Resume-2023.pdf?dl=0';
 
 // export const resumeJpgLink = 'https://i.imgur.com/2LUIwxM.jpg'; // alt link on imgur
 
