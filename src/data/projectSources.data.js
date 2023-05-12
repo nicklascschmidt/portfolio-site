@@ -8,7 +8,7 @@ export const mainProjects = [
       'https://i.imgur.com/BDB7CST.png',
     ],
     projectDescription:
-      'The Freedom Robotics information hub, which users to manage and monitor their devices in a real-world map view, configure automations, and troubleshoot alerts via heatmaps.',
+      'A key Freedom Robotics feature, which enables users to manage and monitor their devices in a real-world map view, configure automations, and troubleshoot alerts via heatmaps.',
     documentationLink: 'https://docs.freedomrobotics.ai/docs/fleet-map-overview',
     techUsed: ['TypeScript', 'NextJS', 'React Hooks', 'Styled-Components', 'Mapbox GL', 'Inkscape'],
   },
@@ -20,7 +20,7 @@ export const mainProjects = [
       'https://i.imgur.com/2J3Up8Q.png',
     ],
     projectDescription:
-      'Freedom Robotics feature to allow users to remotely control a robot by sending commands to the device via the FR API and over a webRTC data channel.',
+      'Freedom Robotics feature to enable users to remotely control a robot by sending commands to the device via the FR API and over a webRTC data channel.',
     documentationLink: 'https://docs.freedomrobotics.ai/docs/start-control',
     techUsed: ['TypeScript', 'NextJS', 'React Hooks', 'WebRTC', 'ThreeJS', 'Mapbox GL'],
   },
